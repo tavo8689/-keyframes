@@ -1,0 +1,153 @@
+body{
+    background-color: rgb(230, 213, 121);
+}
+/*Primer caso*/
+
+div{
+    width: 100px;
+    height: 100px;
+    background: rgb(133, 58, 58);
+    position: relative;
+    animation: uno 5s infinite;
+    
+}
+
+@keyframes uno{
+    from{top: 0px;}
+    to{top: 200px}
+}
+
+/*Segundo caso*/
+
+#dos{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: rgb(32, 130, 32);
+    animation: dos 5s infinite;
+}
+
+@keyframes dos{
+    0%{top: 0px;}
+    25%{top: 200px;}
+    75%{top: 50px;}
+}
+
+/* Tercer caso: Cambio de color */
+#tres{
+    position: relative;
+    animation: tres 5s infinite;
+}
+ 
+@keyframes tres{
+    0%{top: 0px; background-color: blue; width: 100px;}
+    100%{top: 200px; background-color: yellow; width: 300px;}  
+}
+  
+  /* Cuarto caso: Rotación */
+  #cuatro {
+    width: 100px;
+    height: 100px;
+    background: rgb(58, 133, 58);
+    position: relative;
+    animation: cuatro 4s infinite;
+  }
+
+  iframe{
+    width: 100px;
+  }
+  
+  @keyframes cuatro {
+    0% {
+      top: 0px; left: 0px;
+    }
+    25% {
+      top: 0px; left: 100px;
+    }
+    50% {
+      top: 100px; left: 100px;
+    }
+    75%{
+        top: 100px; left: 0px;
+    }
+
+    100%{
+        top: 0px; left: 0px;
+    }
+  }
+  
+  /* Quinto caso: Escalado */
+  #cinco {
+    width: 100px;
+    height: 100px;
+    background: rgb(133, 133, 58);
+    position: relative;
+    animation: escalado 3s infinite alternate;
+  }
+  
+  @keyframes escalado {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  #slider01{
+    width: 100px;
+    height: 100px;
+    background: rgb(132, 51, 51);
+    position: absolute;
+    margin-left: 150px;
+    animation: slider-a 7s infinite;
+  }
+
+  #slider02{
+    width: 100px;
+    height: 100px;
+    background: rgb(132, 51, 51);
+    position: absolute;
+    margin-left: 300px;
+    animation: slider-a 7s infinite;
+  }
+
+  #slider03{
+    width: 100px;
+    height: 100px;
+    background: rgb(132, 51, 51);
+    position: absolute;
+    margin-left: 450px;
+    animation: slider-a 7s infinite;
+  }
+
+  #slider04{
+    width: 100px;
+    height: 100px;
+    background: rgb(132, 51, 51);
+    position: absolute;
+    margin-left: 600px;
+    animation: slider-a 7s infinite;
+  }
+
+  @keyframes slider-a{
+    0%{
+        left: 0px;
+    }
+
+    25%{
+        left: 300px;
+    }
+
+    50%{
+        left: 300px;
+    }
+
+    100%{
+        left: 0px;
+    }
+  }
+  
